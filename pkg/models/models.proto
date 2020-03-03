@@ -1,0 +1,28 @@
+syntax="proto3";
+
+//protoc --go_out=plugins=grpc:. models.proto
+
+package models;
+
+message Task {;
+        string data  = 1;
+        bool done = 2;
+        string desc = 3;
+        uint64  id =4;
+}
+
+message TaskList{
+    repeated Task tasks=1;
+}
+
+message Text{
+    string text = 1; 
+    string desk=2;
+}
+
+message Void{}
+
+service Tasks{
+    rpc List(Void) returns(TaskList){}
+    rpc Add(Text) returns(Task){}
+}
