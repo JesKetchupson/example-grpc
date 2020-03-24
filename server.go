@@ -1,8 +1,8 @@
-package example
+package example-grpc
 
 import (
 	"context"
-	"example/pkg/models"
+	"example-grpc/pkg/models"
 	"net"
 
 	"google.golang.org/grpc"

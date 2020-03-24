@@ -1,4 +1,4 @@
-module example
+module example-grpc
 
 go 1.13
 

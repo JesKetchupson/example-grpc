@@ -1,14 +1,14 @@
-package example
+package example-grpc
 
 import (
 	"context"
 	"math/rand"
 	"time"
 
-	"example/pkg/config"
-	"example/pkg/db"
-	"example/pkg/log"
-	"example/pkg/models"
+	"example-grpc/pkg/config"
+	"example-grpc/pkg/db"
+	"example-grpc/pkg/log"
+	"example-grpc/pkg/models"
 
 	"github.com/golang/protobuf/proto"
 )

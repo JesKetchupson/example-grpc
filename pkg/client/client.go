@@ -2,7 +2,7 @@ package client
 
 import (
 	"context"
-	"example/pkg/models"
+	"example-grpc-grpc/pkg/models"
 	"fmt"
 )
 
